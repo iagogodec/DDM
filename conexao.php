@@ -1,14 +1,16 @@
 <?php
-    $host = "localhost";
-    $usuario = "root";
-    $senha = "";
-    $banco = "bdlogin";
+$host="localhost";
+$usuario="root";
+$senha= "";
+$banco= "dblogin";
 
-    $dbcon = new MySQLi("$host","$usuario","$senha","$banco")
+$dbcon = new MYSQLi("$host","$usuario","$senha","$banco");
 
-    if($dbcon->connect_erro){
-        echo "conexao_erro";
-    }//else{
-    //     echo "conexao_ok"
-    // }
+if($dbcon->connect_error){
+
+echo "conexão erro";
+}/*else{
+ echo "conexão ok";   
+}*/
+
 ?>
